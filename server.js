@@ -12,15 +12,18 @@ var express =require("express");  //lib-----Node Module
 var app=express();  // will create app object from express package
 
 var onAboutUs=function(req, res){
-    res.send("Chief Mentor :Ravi Tambade");
+    res.send("Chief Mentor :Ganesh Akhade");
 };
 var onDefault=function(req, res){
-    res.send("<h1>Transflower Learning Pvt. Ltd</h1>"+
+    res.send("<h1>GK Automation Private.Ltd</h1>"+
               "<hr/>"+
               "<ol>"+
-                    " <li>Workshops</li>"+
-                    " <li>Online Course</li>"+
-                    " <li>Corporate Training</li>"+
+                    " <li>PLC Siemens</li>"+
+                    " <li>Maintainance and Services</li>"+
+                    " <li>SCADA WinCC</li>"+
+                    " <li>HMI support</li>"+
+                    
+             
              "</ol>");
 };
 app.get("/",onDefault);  // Request handler functions are registered
